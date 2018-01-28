@@ -54,7 +54,7 @@ class Router
                 // создать объект и вызвать метод
                 $controllerObject = new $controllerName;
                 $result = call_user_func_array([$controllerObject,$actionName], $parametrs);
-                $result = call_user_func_array([$controllerObject,$actionName], $parametrs);
+
                 if ($result != NULL) {
                     break;
                 }
