@@ -139,101 +139,21 @@
             <div class="carousel">
                 <ul id="portfolio-carousel" class="slider-container">
 
-
-                    <!-- One Fourth -->
-
+                 
+                    <?php foreach ($IndexList as $indexItem):?>
                     <li class="column-one-fourth portfolio-item branding">
-                        <!-- Image -->
-                        <a href="#" class="image-link"><img alt="" src="images\placeholders\preview1.jpg" class="fullwidth">
-                        </a>
+                                <p><img src="images\placeholders\<?php echo $indexItem['image'];?>"class="fullwidth" alt="" /></p>
                         <!-- Title -->
-                        <h3><a href="#">Название новости</a></h3>
+                        <h3><a href='/news/<?php echo $indexItem['id'] ;?>'><?php echo $indexItem['title'].' # '.$indexItem['id'];?></a></h3>
                         <!-- Tags -->
-                        <div class="tags">Категория</div>
+                        <div class="tags"><?php echo $indexItem['description'];?></div>
                     </li>
-
-                    <!-- END One Fourth -->
-
-
-
+                    <?php endforeach;?>
+                   
                     <!-- One Fourth -->
 
-                    <li class="column-one-fourth portfolio-item coding">
-                        <!-- Image -->
-                        <a href="#" class="image-link"><img alt="" src="images\placeholders\preview2.jpg" class="fullwidth">
-                        </a>
-                        <!-- Title -->
-                        <h3><a href="#">Название новости</a></h3>
-                        <!-- Tags -->
-                        <div class="tags">Категория</div>
-                    </li>
 
                     <!-- END One Fourth -->
-
-
-
-                    <!-- One Fourth -->
-
-                    <li class="column-one-fourth portfolio-item branding identity">
-                        <!-- Image -->
-                        <a href="#" class="image-link"><img alt="" src="images\placeholders\preview3.jpg" class="fullwidth">
-                        </a>
-                        <!-- Title -->
-                        <h3><a href="#">Название новости</a></h3>
-                        <!-- Tags -->
-                        <div class="tags">Категория</div>
-                    </li>
-
-                    <!-- END One Fourth -->
-
-
-
-                    <!-- One Fourth -->
-
-                    <li class="column-one-fourth portfolio-item identity">
-                        <!-- Image -->
-                        <a href="#" class="image-link"><img alt="" src="images\placeholders\preview4.jpg" class="fullwidth">
-                        </a>
-                        <!-- Title -->
-                        <h3><a href="#">Название новости</a></h3>
-                        <!-- Tags -->
-                        <div class="tags">Категория</div>
-                    </li>
-
-                    <!-- END One Fourth -->
-
-
-
-                    <!-- One Fourth -->
-
-                    <li class="column-one-fourth portfolio-item coding">
-                        <!-- Image -->
-                        <a href="#" class="image-link"><img alt="" src="images\placeholders\preview5.jpg" class="fullwidth">
-                        </a>
-                        <!-- Title -->
-                        <h3><a href="#">Название новости</a></h3>
-                        <!-- Tags -->
-                        <div class="tags">Категория</div>
-                    </li>
-
-                    <!-- END One Fourth -->
-
-
-
-                    <!-- One Fourth -->
-
-                    <li class="column-one-fourth portfolio-item branding">
-                        <!-- Image -->
-                        <a href="#" class="image-link"><img alt="" src="images\placeholders\preview6.jpg" class="fullwidth">
-                        </a>
-                        <!-- Title -->
-                        <h3><a href="#">Название новости</a></h3>
-                        <!-- Tags -->
-                        <div class="tags">Категория</div>
-                    </li>
-
-                    <!-- END One Fourth -->
-
 
                 </ul>
             </div>
@@ -249,65 +169,25 @@
                     <div class="carousel">
                         <ul id="blog-carousel" class="slider-container">
 
-
+                            <?php foreach ($indexLastNews as $indexLastNewsItem):?>
                             <!-- One Fourth -->
 
                             <li class="column-one-fourth">
                                 <!-- Image -->
-                                <a href="blog-post.html" class="image-link"><img alt="" src="images\placeholders\preview9.jpg" class="fullwidth">
+                                <a href="/news/<?php echo $indexLastNewsItem['id'] ;?>" class="image-link"><img alt="" src="images\placeholders\<?php echo $indexLastNewsItem['image'] ;?>" class="fullwidth">
                                 </a>
                                 <!-- Title -->
-                                <h3><a href="blog-post.html">Заголовок новости на сайте</a></h3>
+                                <h3><a href='/news/<?php echo $indexLastNewsItem['id'] ;?>'><?php echo $indexLastNewsItem['title'].' # '.$indexLastNewsItem['id'];?></a></h3>
                                 <!-- Date -->
-                                <div class="date">31 августа 2016</div>
+                                <div class="date"><?php echo $indexLastNewsItem['date'] ;?></div>
                                 <!-- Excerpt -->
-                                <p>Интересно отметить, что каждая сфера рынка притягивает план размещения. </p>
+                                <p><?php echo $indexLastNewsItem['content'] ;?></p>
                                 <!-- Read More Link -->
-                                <a href="blog-post.html">Подробнее</a>
+                                <a href='/news/<?php echo $indexLastNewsItem['id'] ;?>'>Подробнее</a>
                             </li>
 
                             <!-- END One Fourth -->
-
-
-
-                            <!-- One Fourth -->
-
-                            <li class="column-one-fourth">
-                                <!-- Image -->
-                                <a href="blog-post.html" class="image-link"><img alt="" src="images\placeholders\preview11.jpg" class="fullwidth">
-                                </a>
-                                <!-- Title -->
-                                <h3><a href="blog-post.html">Заголовок новости на сайте</a></h3>
-                                <!-- Date -->
-                                <div class="date">31 августа 2016</div>
-                                <!-- Excerpt -->
-                                <p>Интересно отметить, что каждая сфера рынка притягивает план размещения. </p>
-                                <!-- Read More Link -->
-                                <a href="blog-post.html">Подробнее</a>
-                            </li>
-
-                            <!-- END One Fourth -->
-
-
-
-                            <!-- One Fourth -->
-
-                            <li class="column-one-fourth">
-                                <!-- Image -->
-                                <a href="blog-post.html" class="image-link"><img alt="" src="images\placeholders\preview8.jpg" class="fullwidth">
-                                </a>
-                                <!-- Title -->
-                                <h3><a href="blog-post.html">Заголовок новости на сайте</a></h3>
-                                <!-- Date -->
-                                <div class="date">31 августа 2016</div>
-                                <!-- Excerpt -->
-                                <p>Интересно отметить, что каждая сфера рынка притягивает план размещения. </p>
-                                <!-- Read More Link -->
-                                <a href="blog-post.html">Подробнее</a>
-                            </li>
-
-                            <!-- END One Fourth -->
-
+                            <?php endforeach;?>
 
                         </ul>
                     </div>
@@ -344,61 +224,18 @@
 
                 <div class="carousel">
                     <ul id="clients-carousel" class="column-container">
-
+<?php
+foreach ($logoPictures as $soloLogo):
+?>
                         <li class="">
                             <div class="logo-outer">
                                 <div class="logo-inner">
                                     <!-- Actual Logo -->
-                                    <img alt="" src="images\client-logos\logo1.png">
+                                    <img alt="" src="images\client-logos\<?php echo $soloLogo ?>">
                                 </div>
                             </div>
                         </li>
-
-                        <li class="">
-                            <div class="logo-outer">
-                                <div class="logo-inner">
-                                    <!-- Actual Logo -->
-                                    <img alt="" src="images\client-logos\logo2.png">
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="">
-                            <div class="logo-outer">
-                                <div class="logo-inner">
-                                    <!-- Actual Logo -->
-                                    <img alt="" src="images\client-logos\logo3.png">
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="">
-                            <div class="logo-outer">
-                                <div class="logo-inner">
-                                    <!-- Actual Logo -->
-                                    <img alt="" src="images\client-logos\logo4.png">
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="">
-                            <div class="logo-outer">
-                                <div class="logo-inner">
-                                    <!-- Actual Logo -->
-                                    <img alt="" src="images\client-logos\logo5.png">
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="">
-                            <div class="logo-outer">
-                                <div class="logo-inner">
-                                    <!-- Actual Logo -->
-                                    <img alt="" src="images\client-logos\logo6.png">
-                                </div>
-                            </div>
-                        </li>
-
+<?php endforeach;?>
                     </ul>
                 </div>
             </div>

@@ -8,10 +8,8 @@ class NewsController {
     {
         $newsList = [];
         $newsList = News::getNewsList();
-        echo '<pre>';
-        print_r($newsList);
-        echo '<pre>';
-        //require_once (ROOT . '/application/views/news/contact.phtml');
+
+
         return true;
     }
 
@@ -19,9 +17,7 @@ class NewsController {
     {
         if ($id) {
             $newsItem = News::getNewsItemById($id);
-            echo '<pre>';
-            print_r($newsItem);
-            echo '<pre>';
+            require_once (ROOT . '/application/views/news/blog-post.phtml');
         }
         return true;
     }
